@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RasoiMint — Your Rasoi. Your Numbers. One Mint.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PUBLIC WEBSITE ============ -->
+<div id="site">
+  <header class="nav">
+    <a class="logo" href="#/"><span class="lm">R</span>RasoiMint</a>
+    <button class="burger" id="navBtn" aria-label="Menu">☰</button>
+    <nav id="navLinks">
+      <a href="#features">Product</a><a href="#audience">Solutions</a><a href="#pricing">Pricing</a><a href="#soon">About</a>
+      <a class="btn ghost" href="#/app/dashboard">Login</a>
+      <a class="btn" href="#/app/dashboard">Get Started</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-txt">
+      <h1>Your Rasoi.<br>Your Numbers.<br><span>One Mint.</span></h1>
+      <p>Run procurement, inventory, food costs and restaurant finances from one place.</p>
+      <div class="row"><a class="btn lg" href="#/app/dashboard">Get Started</a><a class="btn ghost lg" href="#preview">View Demo</a></div>
+      <small>Built for independent restaurants, cafés, QSRs and small hotels with 1–5 outlets.</small>
+    </div>
+    <div class="hero-art" id="heroArt"></div>
+  </section>
+
+  <section class="wrap" id="preview"><div class="mock" id="mock"></div></section>
+
+  <section class="wrap problem">
+    <h2>The restaurant back office shouldn't live on WhatsApp.</h2>
+    <div class="chaos" id="chaos"></div>
+    <div class="bring">Bring it together with <b>RasoiMint.</b></div>
+  </section>
+
+  <section class="wrap" id="features">
+    <h2>Everything behind the kitchen door</h2>
+    <div class="grid g3" id="featGrid"></div>
+  </section>
+
+  <section class="wrap flowsec">
+    <h2>From purchase to profit.</h2>
+    <div class="flow" id="flow"></div>
+  </section>
+
+  <section class="wrap" id="audience">
+    <h2>Built for every Rasoi</h2>
+    <div class="grid g5" id="audGrid"></div>
+  </section>
+
+  <section class="wrap band">
+    <h2>Know what you're spending.<br>Know what you're earning.</h2>
+    <div class="grid g5" id="metricGrid"></div>
+    <small class="note">Illustrative sample data for demonstration.</small>
+  </section>
+
+  <section class="wrap">
+    <h2>RasoiMint Insights</h2>
+    <div class="grid g4" id="insGrid"></div>
+  </section>
+
+  <section class="wrap" id="pricing">
+    <h2>Simple pricing, per outlet</h2>
+    <div class="grid g3" id="priceGrid"></div>
+    <small class="note">Sample pricing for demo purposes only.</small>
+  </section>
+
+  <section class="wrap" id="soon">
+    <h2>Coming Soon</h2>
+    <div class="grid g5" id="soonGrid"></div>
+  </section>
+
+  <section class="cta">
+    <h2>Run your Rasoi.<br>Mind your Margins.</h2>
+    <a class="btn lg light" href="#/app/dashboard">Get Started</a>
+  </section>
+
+  <footer class="foot"><b>RasoiMint</b><span>Procurement • Inventory • Food Cost • Finance</span><small>Fictional startup demo. No real customers, revenue or partnerships are claimed.</small></footer>
+</div>
+
+<!-- ============ RESTAURANT MIS ============ -->
+<div id="app" hidden>
+  <aside class="side" id="side"></aside>
+  <div class="shade" id="shade"></div>
+  <div class="main">
+    <header class="top">
+      <button class="burger" id="sideBtn" aria-label="Open menu">☰</button>
+      <div class="ctx"><b>The Spice Route</b>
+        <select id="outletSel"><option>Gurugram</option><option>Delhi</option><option>Noida</option><option>Jaipur</option></select>
+      </div>
+      <div class="topr"><span class="date">29 September 2026</span><button class="ic" data-m="Notifications">🔔<i></i></button><button class="ic av" data-m="Profile">SR</button></div>
+    </header>
+    <main id="view"></main>
+  </div>
+</div>
+
+<div class="modal" id="modal" hidden><div class="mbox" id="mbox"></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
